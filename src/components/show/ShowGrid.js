@@ -1,8 +1,8 @@
 import React from 'react';
 import ShowCard from './ShowCard';
-import IMAGE_NOTE_FOUND from '../..images/not-found.png';
+import IMAGE_NOTE_FOUND from '../../images/not-found.png';
 
-const Showgrid = ({ data }) => {
+const ShowGrid = ({ data }) => {
   return (
     <div>
       {data.map(({ show }) => (
@@ -18,4 +18,4 @@ const Showgrid = ({ data }) => {
   );
 };
 
-export default Showgrid;
+export default ShowGrid;
