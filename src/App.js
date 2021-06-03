@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import Home from './Pages/Home';
 import Starred from './Pages/Starred';
+import Show from './Pages/Show';
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
 
       <Route>
         <div>Not found</div>
+      </Route>
+
+      <Route exact path="/show/:id">
+        <Show />
       </Route>
     </Switch>
   );
